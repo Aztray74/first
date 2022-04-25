@@ -1,36 +1,22 @@
-let animals = [{
-      name: "dog",
-      color: "brown"
-    }, {
-      name: "cat",
-      color: "black"
-    }, {
-      name: "mouse",
-      color: "grey"
-    }, {
-      name: "tiger",
-      color: "orange"
-    },{
-      name: "bird",
-      color: "white"
-    }
-    ];
+'use strict';
 
-    let randomIndex;
+function setup(){
+  createCanvas(600,600)
+}
+function draw(){
+  if(state === 'title'){
+    title();
+  } else if(state === 'level 1')
+  level1();
+}
 
-    function setup() {
-      createCanvas(600, 600);
-      background(200);
+fucntion title(){
+  background(100);
+  textsize(80);
+  stroke(255);
+  text('MY GAME', 100,100);
+}
 
-
-    }
-    function draw(){
-
-
-    }
-    function mousePressed(){
-      background(random(200,255));
-      randomIndex = int(random(animals. length));
-      text(animals[randomIndex].name, 50, 50);
-      animals. splice(randomIndex, 1);
-    }
+function level1(){
+  background(50,150,200);
+}
